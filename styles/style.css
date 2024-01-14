@@ -71,8 +71,8 @@ nav li{
 }
 
 .sponsor{
-    margin-top: 170px;
     text-align: center;
+    margin-top: 170px;
 }
 
 .sponsor img{
@@ -92,7 +92,8 @@ nav li{
     }
 
     nav ul{
-        gap: 10px;
+        text-align: center;
+        gap: 20px;
     }
 
     .banner-container{
@@ -107,5 +108,20 @@ nav li{
     .banner-image{
         width: 450px;
     }
+
+    .sponsor{
+       flex-wrap: wrap;
+    }
+    .sponsor img{
+        align-items: center;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    
+}
+
+
+@media screen and (min-width:576px and max-width:960px) {
     
 }
