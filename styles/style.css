@@ -3,7 +3,7 @@
 /* primary styles */
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Inter';
 }
 
 /* nav styles */
@@ -79,6 +79,82 @@ nav li{
     margin-right: 60px;
 }
 
+/* popular section */
+
+.popular-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 195px;
+}
+
+.item-section{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+}
+
+.item{
+    width: 320px;
+    height: 476px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+}
+
+.popular-section h2{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+}
+
+
+.item-section h3{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.item-section h4{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+.item-section p{
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%; /* 20.02px */
+    letter-spacing: 0.252px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive styles */
 
@@ -105,8 +181,8 @@ nav li{
         text-align: center;
     }
 
-    .banner-image{
-        width: 450px;
+    .banner-image img{
+        width: 400px;
     }
 
     .sponsor{
@@ -118,10 +194,28 @@ nav li{
         margin-bottom: 25px;
         justify-content: center;
     }
+    .popular-section{
+        margin: 20px;
+    }
+    .item-section{
+        display: flex;
+        flex-direction: column;
+    }
     
 }
 
 
-@media screen and (min-width:576px and max-width:960px) {
+@media screen and (min-device-width: 576px) and (max-device-width: 960px) {
+    nav ul{
+        margin-right: 220px;
+    }
+    .banner-container{
+        width: 750px;
+    }
+
+    .item-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
