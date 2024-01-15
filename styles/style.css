@@ -164,12 +164,14 @@ nav li{
     }
     nav{
         flex-direction: column;
+        justify-content: center;
         text-align: center;
     }
 
     nav ul{
         text-align: center;
         gap: 20px;
+        margin-right: 20px ;
     }
 
     .banner-container{
@@ -182,7 +184,7 @@ nav li{
     }
 
     .banner-image img{
-        width: 400px;
+        width: 350px;
     }
 
     .sponsor{
@@ -216,6 +218,6 @@ nav li{
     .item-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
-    
 }
