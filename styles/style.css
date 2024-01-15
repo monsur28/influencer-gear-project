@@ -170,8 +170,8 @@ nav li{
 
     nav ul{
         text-align: center;
-        gap: 20px;
-        margin-right: 20px ;
+        gap: 10px;
+        margin-left: -20px ;
     }
 
     .banner-container{
@@ -184,7 +184,7 @@ nav li{
     }
 
     .banner-image img{
-        width: 350px;
+        width: 300px;
     }
 
     .sponsor{
@@ -198,10 +198,13 @@ nav li{
     }
     .popular-section{
         margin: 20px;
+        border-radius: 5px solid rgb(32, 31, 31);
     }
     .item-section{
         display: flex;
         flex-direction: column;
+        margin-left: -15px;
+        row-gap: 2px;
     }
     
 }
@@ -218,6 +221,7 @@ nav li{
     .item-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+        align-items: ce;
     }
+    
 }
